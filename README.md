@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Rode piste
 
   #### Je focus:
-  Helemaal responsive 
+  responsive
  
 </details>
 
@@ -37,15 +37,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je opdracht:
   link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
-  http://www.e38registry.org/
+  https://www.ekris.nl/bmw
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  735i 
-  <img src="readme-images/pagina-735i.jpg" width="375px" alt="omschrijving van de pagina">
+  Hybride BMW modellen
+  <img src="readme-images/hybride-modellen.jpg" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Links & Resources
-  <img src="readme-images/pagina-links.jpg" width="375px" alt="omschrijving van de pagina">
+  Fastr-verhalen
+  <img src="readme-images/fastr-verhalen.jpg" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
