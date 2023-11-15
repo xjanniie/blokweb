@@ -60,7 +60,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen:
 
   Overall is het mij opgevallen dat er veel tijd is gestopt in de reader ondanks dat de doelgroep niet direct blinde of slechtzienden zijn.
-
+ 
   Header:
   - De woorden worden compleet voorgelezen en daarnaast ook per letter.
   - Bij de ene wordt vermeld dat het een link is en bij de andere dat het een button is.
