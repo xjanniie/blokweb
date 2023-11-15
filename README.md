@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Rode piste
 
   #### Je focus:
-  responsive
+  Surface laag
  
 </details>
 
