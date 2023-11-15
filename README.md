@@ -59,6 +59,28 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
+  Overall is het mij opgevallen dat er veel tijd is gestopt in de reader ondanks dat de doelgroep niet direct blinde of slechtzienden zijn.
+
+  Header:
+  - De woorden worden compleet voorgelezen en daarnaast ook per letter.
+  - Bij de ene wordt vermeld dat het een link is en bij de andere dat het een button is.
+  - Via meer wordt er aangegeven dat de dialoog opent.
+  - Het poppetje icoon wordt bij gezegd dat dit de link is naar het klant portal.
+  - Via de knop meer wordt mij verteld dat dit de meer button is. Helaas wordt bij het icoon daarvan aangegeven dat de het een banner banner image is. 
+  
+  Pagina Hybride:
+  - Bij de BMW linkjes worden heeeeeel veel underscores genoemd. Pas op het einde wordt er aangegeven dat het een link is.
+  - De tekst is juist en er wordt gebruik gemaakt van headers.
+
+  Pagina Fastr:
+  - De afbeelding van de m3 is een underscore underscore heeeeel veel tekst... image.
+  - Er staat in de tekst: stuur bericht naar dit email adres .... @mail. Er wordt niet gewerkt met een knop naar een formulier bijvoorbeeld.
+  - Wil jij ook deel maken van? druk via de button. Welke button wordt niet over gesproken. Is de tekst een button? er had beter kunnen staan: druk hieronder zodat het duidelijk is dat je moet doorklikken. 
+
+  Footer:
+  - DDe onderste linkjes worden in het begin aangegeven dat het linkjes zijn.
+  
+
 </details>
 
 
