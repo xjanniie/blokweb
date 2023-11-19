@@ -40,12 +40,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.ekris.nl/bmw
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Hybride BMW modellen
-  <img src="readme-images/hybride-modellen.jpg" width="375px" alt="omschrijving van de pagina">
+  De BMW 7 serie
+  <img src="readme-images/de-bmw-7-serie.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Fastr-verhalen
-  <img src="readme-images/fastr-verhalen.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/fastr-verhalen.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -68,8 +68,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Het poppetje icoon wordt bij gezegd dat dit de link is naar het klant portal.
   - Via de knop meer wordt mij verteld dat dit de meer button is. Helaas wordt bij het icoon daarvan aangegeven dat de het een banner banner image is. 
   
-  Pagina Hybride:
+  Pagina de BMW 7 serie:
   - Bij de BMW linkjes worden heeeeeel veel underscores genoemd. Pas op het einde wordt er aangegeven dat het een link is.
+  - er staat veel tekst
   - De tekst is juist en er wordt gebruik gemaakt van headers.
 
   Pagina Fastr:
@@ -78,7 +79,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Wil jij ook deel maken van? druk via de button. Welke button wordt niet over gesproken. Is de tekst een button? er had beter kunnen staan: druk hieronder zodat het duidelijk is dat je moet doorklikken. 
 
   Footer:
-  - DDe onderste linkjes worden in het begin aangegeven dat het linkjes zijn.
+  - De onderste linkjes worden in het begin aangegeven dat het linkjes zijn.
   
 
 </details>
@@ -91,13 +92,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown-fastr.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/breakdown-dynamisch-link.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/breakdown-dynamische-menu.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
