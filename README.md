@@ -112,7 +112,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  - Maandags had ik de les gemist omdat er geen treinen reden en de omleiding voor mij onmogelijk was om naar de les te komen.
+  - Ik heb gewerkt aan de 2 flexbox opdrachten. Ik heb gemerkt dat flexbox nog best lastig is en je niet te snel moet opgeven. 
+
+  
+    Ik heb een plan gemaakt wat ik graag wil bereiken deze week:
+    1. Alle HTML van de 2 pagina's in een document
+    2. Stuk voor stuk beginnen met de CSS
+    3. 
 
 
   ### Agenda voor meeting
