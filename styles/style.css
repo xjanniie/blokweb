@@ -12,14 +12,16 @@
 /**************/
 /* CSS REMEDY */
 /**************/
+* {
+	font-family: "BMWTypeNext Pro Regular";
+}
+
+
 *, *::after, *::before {
   box-sizing:border-box;  
 }
 
 
-* {
-	font-family: "BMWTypeNext Pro Regular";
-}
 
 
 
