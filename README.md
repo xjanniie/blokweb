@@ -84,15 +84,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Foto's van WCAG checklist:
 
-    <img src="readme-images/wcag-checklist-1.jpg" width="375px" alt="WCAG pagina 1">
+  <img src="readme-images/wcag-checklist-1.jpg" width="375px" alt="WCAG pagina 1">
 
-    <img src="readme-images/wcag-checklist-2.jpg" width="375px" alt="WCAG pagina 2">
+  <img src="readme-images/wcag-checklist-2.jpg" width="375px" alt="WCAG pagina 2">
     
-    <img src="readme-images/wcag-checklist-3.jpg" width="375px" alt="WCAG pagina 3">
+  <img src="readme-images/wcag-checklist-3.jpg" width="375px" alt="WCAG pagina 3">
     
-    <img src="readme-images/wcag-checklist-4.jpg" width="375px" alt="WCAG pagina 4">
+  <img src="readme-images/wcag-checklist-4.jpg" width="375px" alt="WCAG pagina 4">
     
-    <img src="readme-images/wcag-checklist-5.jpg" width="375px" alt="WCAG pagina 5">
+  <img src="readme-images/wcag-checklist-5.jpg" width="375px" alt="WCAG pagina 5">
   
 
 </details>
