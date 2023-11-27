@@ -136,7 +136,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
+  samen met je groepje opstellen:
+
+  - ik zat in het groepje met Reanne. Eigenlijk kregen wij een soort van 1op1 begeleiding.
+  Er waren niet mega veel studenten. Dat vond ik zeer prettig. 
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
@@ -148,10 +151,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Ik moet nog best wat afbeeldingen in de site zetten
+  - Ik heb mijn fonds gedownload met hulp, dit is gedowload zodat het al ingeladen wordt
+    op mijn website. 
+  - Ik heb uitleg gekregen over hoe ik om moet gaan met articles en sections.
+
+  - 1 antwoord ben ik niet helemaal tevreden over. ik ben namelijk van mening     dat de titels 
+    via uppercase van css moeten worden gestyled. Ik ga dit later bespreken met de docent. 
+  - Ik heb de code opgesplits bij de h1, h2, h3 om niet te veel te herhalen. Dit was van mij een goed idee. 
+
 
 </details>
 
@@ -165,7 +173,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Maandag is de les door omstandigheden niet door gegaan. Ik ben de maandag inhoudelijk niet doorgegaan met de stof van de les. Ik heb gewerkt aan mijn aanpassingen van de site omdat ik andere dingen aan mijn hoofd had. 
 
 
   ### Agenda voor meeting
