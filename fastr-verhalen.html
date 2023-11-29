@@ -14,6 +14,30 @@
 
 <body>
 <header>
+	<!--geen omschrijving ivm niet interessant voor screenreader-->
+	<button aria-hidden="true"><img src="images/hamburger-icon.png" alt="" />Menu</button>
+  
+<nav>
+    <button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-cross.svg" alt="" />Sluit</button>
+
+	<ul>
+		<li><a class="active" href="#" title="Vind uw BMW">Vind uw BMW</a></li>
+		
+		<li><a class="active" href="#" title="Serice">Service</a></li>
+
+		<li><a class="active" href="#" title="Lease en Financieren">Leasen & Financieren</a></li>
+	
+		<li><a class="active" href="#" title="Elektrisch rijden">Elektrisch rijden</a></li>
+	
+		<li><a class="active" href="#" title="Fleet Sales">Fleet Sales</a></li>
+
+		<li><a class="active" href="#" title="Duurzaamheid">Duurzaamheid</a></li>
+		
+		<li><a class="active" href="#" title="Over Ekris">Over Ekris</a></li>
+		
+		<li><a class="active" href="#" title="Webshop">Webshop</a></li>
+	</ul>
+</nav>	
 
 </header>
 	<main>
@@ -57,17 +81,24 @@
 </main>
 
 <footer>
-	<div>
+	<section>
+		<article>
 		<!--afbeelding bmw-->
 
 		<a class="text-btn" href="#" title="Naar website Ekris MINI">Naar Ekris MINI</a>
 
-		<a class="text-btn" href="#" title="Link om menu BMW te openen">BMW</a>
+<!--list items gebruikt voor de a link om drop down menu te openen-->
+<ul>
+	<li><a class="text-btn" href="#" title="Link om menu BMW te openen">BMW</a></li>
 
-		<a class="text-btn" href="#" title="Link om menu meer MINI te openen">Mini</a>
+	<li><a class="text-btn" href="#" title="Link om menu meer MINI te openen">Mini</a></li>
 
-		<a class="text-btn" href="#" title="Link om menu ekris te openen">Ekris</a>
-	</div>
+	<li><a class="text-btn" href="#" title="Link om menu ekris te openen">Ekris</a></li>
+</ul>
+
+
+<!--de knoppen van de linkjes zijn buttons ivm naar andere pagina's-->
+<script defer src="scripts/script.js"></script>
 </footer>
 </body>
 	
