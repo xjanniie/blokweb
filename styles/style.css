@@ -1,7 +1,16 @@
 @font-face {
     font-family: "BMWTypeNext Pro Regular";
-    src: url()
-   
+    src: url('fonts/type-next-tt-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: "BMWTypeNext Pro Light";
+    src: url('fonts/type-next-tt-light.woff') format('woff');
+}
+
+@font-face {
+    font-family: "BMWTypeNext Pro Bold";
+    src: url('fonts/type-next-tt-bold.woff') format('woff');
 }
 
 
@@ -32,7 +41,7 @@
 
 
 
-
+/*bron voor berekenen px naar em: https://nekocalc.com/px-to-em-converter*/
 
 /****************/
 /* JOUW STYLING */
@@ -41,20 +50,230 @@ h1, h2, h3, h4 {
 	text-transform: uppercase;
     line-height: 1.2;
     font-weight: 300;
-    letter-spacing: 1px;
+    letter-spacing: 0.063px;
 }
 
 
-/* em gebruiken in css ipv px ivm schalen*/
-
 h1 {
-	font-size: 40px;
+	font-size: 2.5em;
 }
 
 h2, h3 {
-	font-size: 32px;
+	font-size: 2em;
 }
 
 h4 {
-	font-size: 18px;
+	font-size: 11.125em;
 }
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+  --general-color:#012;
+  --general-background:#fff;
+  
+  --header-gradient:linear-gradient(#fff, #fff);
+  
+  --menu-gradient:linear-gradient(#8af, #bdf);
+  --menu-border:#46f;
+  
+  --button-color:#fff;
+  --button-background:#f46;
+  
+  --title-gradient:linear-gradient(#f46 40%, #f8a 80%);
+}
+
+
+
+body{
+  margin:0;
+}
+
+
+header {
+    min-height:4em;
+    padding:0 1em;
+    background-image:var(--header-gradient);
+    line-height:1;
+    
+    /* JOUW CODE HIER - stap 3 */
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    
+    position:sticky;
+    top:0;
+  }
+  
+  /* alle links in de header */
+  header a {
+    padding:.5em 0;
+    color:var(--general-color);
+    text-decoration:none;
+  }
+  
+  header > a {
+    /* om het boek en de titel te positioneren */
+    display:grid;
+    grid-template-columns:min-content min-content;
+    grid-gap:.25em;
+    align-items:center;
+    
+    font-weight:bold; 
+  }
+  
+  header > a img {
+    height:3em;
+  }
+  
+  /*****************/
+/* BEIDE BUTTONS */
+/*****************/
+header button {
+  padding:.5em;
+  
+  /* icon en tekst met gap-je naast elkaar */
+  display:flex;
+  align-items:center;
+  gap:.25em;
+  
+  /* standaard styling aanpassen */
+  appearance:none;
+  background-color:var(--button-background);
+  border:none;
+  border-radius:.25em; 
+  font:inherit;
+  text-align:center;
+  color:var(--button-color);
+}
+
+header button img {
+  height:1em;
+}
+
+
+/***************/
+/* MENU BUTTON */
+/***************/
+header > button {
+  /* JOUW CODE HIER - stap 3 */
+  order:-1;
+}
+
+/************/
+/* HET MENU */
+/************/
+nav {
+  padding:1em;
+  
+  display:grid;
+  align-content:start;
+  gap:1em;
+  
+  background-image:var(--menu-gradient);
+  
+  /* JOUW CODE HIER - stap 1 */
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  
+  /* JOUW CODE HIER - stap 2 */
+  translate:-100% 0%;
+  
+  /* JOUW CODE HIER - stap 4 */
+  transition:translate .3s;
+}
+
+/* als menu open is */
+nav.toonMenu {
+  /* JOUW CODE HIER - stap 4 */
+  translate:0% 0%;
+}
+
+/*******************/
+/* LIJST MET LINKS */
+/*******************/
+nav ul { 
+  margin:0; 
+  padding:0em;
+  list-style:none;
+}
+
+
+/************************/
+/* EEN LINK IN DE LIJST */
+/************************/
+nav a {
+  /* icon en tekst met gap-je naast elkaar */
+  display:flex;
+  align-items:center;
+  column-gap:.25em;
+  
+  border-bottom:solid 1px var(--menu-border);
+}
+
+nav a img {
+  width:auto;
+  height:2em;
+}
+
+nav a.active {
+  font-weight:bold;
+}
+
+
+/****************************************************************/
+/* styling voor de header als de browser minimaal 38em breed is */
+/****************************************************************/
+@media (min-width:52em) {
+  header > button {
+    /* JOUW CODE HIER - stap 6 */
+    display:none;
+  }
+  
+
+  nav {
+    /* JOUW CODE HIER - stap 7 */
+    position:static;
+    translate:unset;
+    padding:0;
+    
+    background:none;
+  }
+  
+  nav button {
+    /* JOUW CODE HIER - stap 6 */
+    display:none;
+  }
+  
+  nav ul {
+    /* JOUW CODE HIER - stap 8 */
+    display:flex;
+    gap:1em;
+  }
+  
+  nav a {
+    /* JOUW CODE HIER - stap 9 */
+    flex-direction:column;
+    
+    border:none;
+  }
+  
+  header > a:last-of-type {
+    /* JOUW CODE HIER - stap 9 */
+    flex-direction:column;
+  }
+}
+
+
+
+
+
+
+
+  
