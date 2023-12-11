@@ -13,26 +13,61 @@
 </head>
 
 <body>
-	<script defer src="scripts/script.js"></script>
-<header>
 
-</header>
+	<header>
+		<!--geen omschrijving ivm niet interessant voor screenreader-->
+		<button aria-hidden="true"><img src="images/hamburger-icon.png" alt="" />Menu</button>
+	  
+	<nav>
+		<button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-cross.svg" alt="" />Sluit</button>
+	
+		<ul>
+			<li><a class="active" href="#" title="Vind uw BMW">Vind uw BMW</a></li>
+			
+			<li><a class="active" href="#" title="Serice">Service</a></li>
+	
+			<li><a class="active" href="#" title="Lease en Financieren">Leasen & Financieren</a></li>
+		
+			<li><a class="active" href="#" title="Elektrisch rijden">Elektrisch rijden</a></li>
+		
+			<li><a class="active" href="#" title="Fleet Sales">Fleet Sales</a></li>
+	
+			<li><a class="active" href="#" title="Duurzaamheid">Duurzaamheid</a></li>
+			
+			<li><a class="active" href="#" title="Over Ekris">Over Ekris</a></li>
+			
+			<li><a class="active" href="/basiswebsite/fastr-verhalen.html" title="Webshop">Webshop</a></li>
+		</ul>
+	</nav>	
+	
+	<!--rechterzijde nav bar-->
+	
+	<a href="#"><img aria-hidden="true" src="images/search-icon.png"/></a>
+	
+	<a href="#"><img aria-hidden="true" src="images/profile-icon.png"/></a>
+	
+	<a href="#"><img aria-hidden="true" src="images/meer-icon.png"/>Meer</a>
+	
+	<a href="#"><img aria-hidden="true" src="images/logo-ekris-bmw.svg"/></a>
+	
+	
+	</header>
 <main>
 
-</section>
+<section>
 <img src="images/bmw-7-serie-zwart-voorkant-zijkant-rijdend-bergweg-header.jpg" alt="Dit is de cockpit vanuit de kijk van de bestuurder">
 	<article>
 		<h1>De BMW 7 serie</h1>
 		<p>Ontdek hem bij Ekris.</p>
 
-		<a class="btn" href="#" title="Link naar de proefrit">Proefrit aanvragen</a>
+		<a class="btn-blauw" href="#" title="Link naar de proefrit">Proefrit aanvragen</a>
 
-		<a class="btn" href="#" title="Link naar offerte">Offerte aanvragen</a>
+		<a class="btn-wit" href="#" title="Link naar offerte">Offerte aanvragen</a>
 	<article>
 </section>
 
 
-</section>
+<section>
 <article>
 	<p>In luxe onderweg</p>
 	<h2>Over de BMW 7 serie</h2>
@@ -41,9 +76,7 @@
 		exterieur en interieur. De BMW 7 Serie baant volledig nieuwe wegen naar puur rijplezier, ongeëvenaard comfort voor 
 		lange reizen en een digitale belevingswereld van topklasse.</p>
 	<article>
-</section>
 
-</section>
 	<article>
 	<!--afbeelding side scrol-->
 	<p>Een strak lijnenspel</p>
@@ -56,7 +89,7 @@
 	<article>
 </section>
 
-</section>
+<section>
 	<p>Een geweldige beleving.</p>
 	<h3>Interieur.</h3>
 	<p>De BMW 7 Serie nodigt uit tot lange comfortabele ritten in volledige luxe. De cockpit van de BMW 7 Serie is uitgerust met 
@@ -91,11 +124,11 @@
 		<article>
 			<img id="auto" src="images/bmw-7-series-kleurafbeelding-i7.png" alt="Dit is de basiskleur voor de i7">
 			<h5></h5>
-			<button id="radom_kleur">Verras me!</button>
+			<button id="random_kleur">Verras me!</button>
 		</article>
 </section>
 
-</section>
+<section>
 <article>
 	<img src="images/bmw-ix-interieur-handen-stuur.jpg" alt="Dit is de view vanuit de gebruiker">
 	<p>Het juiste adres.</p>
@@ -104,11 +137,11 @@
 		belangrijk, zo geniet u maximaal van uw nieuwe auto. Wij benaderen u wanneer uw BMW toe is aan onderhoud en komen deze 
 		kosteloos halen en brengen.</p>
 
-		<a class="btn" href="#" title="Link naar ons verhaal">Lees ons verhaal.</a>
+		<a class="btn-wit-zwart" href="#" title="Link naar ons verhaal">Lees ons verhaal.</a>
 	<article>
 </section>
 
-</section>
+<section>
 <article>
 	<p>Maak uw BMW persoonlijk</p>
 	<h3>Uitvoeringen BMW 7 serie</h3>
@@ -127,8 +160,8 @@
 	<p>Heeft u interesse in de <strong>BMW7 serie</strong>? Bekijk onze huidige voorraad of vraag direct een vrijblijvende offerte aan. Liever in het echt bewonderen? Kom 
 		dan eens langs bij één van onze vestigingen. Wij geven u graag meer informatie.</p>
 		
-		<a class="btn" href="#" title="Link de voorraad">Bekijk voorraad.</a>
-		<a class="btn" href="#" title="Link naar de offerte aanvragen">Offerte aanvragen.</a>
+		<a class="btn-blauw" href="#" title="Link de voorraad">Bekijk voorraad.</a>
+		<a class="btn-grijs" href="#" title="Link naar de offerte aanvragen">Offerte aanvragen.</a>
 	<article>
 </section>
 
@@ -167,8 +200,6 @@
 </main>
 
 <footer>
-	<section>
-		<article>
 		<!--afbeelding bmw-->
 
 		<a class="text-btn" href="#" title="Naar website Ekris MINI">Naar Ekris MINI</a>
@@ -186,6 +217,9 @@
 <!--de knoppen van de linkjes zijn buttons ivm naar andere pagina's-->
 
 </footer>
+<script src="scripts/script.js"></script>
+<script src="scripts/auto-kleur-functie-script.js"></script>
+
 </body>
 	
 </html>

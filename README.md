@@ -201,6 +201,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 ## Toegankelijkheidstest 2/2 (week 4)
+tijdens deze les was ik niet aanwezig. 
+ik zal deze test nogmaals moeten doen als ik bijna klaar ben met het afmaken van de site voor de herkansing
 
 <details>
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
@@ -220,26 +222,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+De fonds zijn juist gegaan. 
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
+1op1 hulp gekregen van de studentassistente , er is geen agenda opgemaakt wel had ik zelf een aantal punten wat ik wou bespreken:
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+ - hoe gebruik ik juist de selector voor css
+ - ik heb problemen met mij veranderende plaatje van de veras mij auto kleur. hij veranderd namelijk de 1e afbeelding van de html pagina
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - ik weet hoe ik de selector juist moet gebruiken en benoemen in de code
+  - mijn afbeelding verander kleur werkt volledig op de pagina
+  - ik heb gevraagd of ik voor buttons classes mag gebruiken ivm stijling
+  - ivm stijling 2e pagina kan ik een class zetten op de body van de 2e pagina zodat ik niet verschillende classe hoef te gebruiken ivm stijling
 
 </details>
 
@@ -257,15 +255,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+ ik heb geleerd om fonts te downloaden en toe te voegen. 
+ ik heb geleerd om styling per stuk te doen zonder classes
+ Ik heb geleerd verschillende buttons te maken. 
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  alles volledig afronden .
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
 
