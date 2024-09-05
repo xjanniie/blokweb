@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Rode piste
 
   #### Je focus:
-  Surface laag
+  Responsive
  
 </details>
 
@@ -41,16 +41,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   De BMW 7 serie
+
+  https://www.ekris.nl/bmw/modellen/7-serie
   <img src="readme-images/de-bmw-7-serie.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Fastr-verhalen
+
+  https://www.ekris.nl/bmw/fastr/verhalen
   <img src="readme-images/fastr-verhalen.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
+## README 2023 FED
 
-
+<details>
 ## Toegankelijkheidstest 1/2 (week 1)
 
 <details>
@@ -265,7 +270,7 @@ De fonds zijn juist gegaan.
 
 </details>
 
-
+</details>
 
 
 
