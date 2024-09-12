@@ -138,7 +138,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
     Ik heb een plan gemaakt wat ik graag wil bereiken deze week:
     1. Alle HTML van de 2 pagina's in een document
     2. Stuk voor stuk beginnen met de CSS
-    3. 
 
 
   ### Agenda voor meeting
@@ -146,13 +145,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   - ik zat in het groepje met Reanne. Eigenlijk kregen wij een soort van 1op1 begeleiding.
   Er waren niet mega veel studenten. Dat vond ik zeer prettig. 
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -180,25 +172,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   Maandag is de les door omstandigheden niet door gegaan. Ik ben de maandag inhoudelijk niet doorgegaan met de stof van de les. Ik heb gewerkt aan mijn aanpassingen van de site omdat ik andere dingen aan mijn hoofd had. 
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
 
 </details>
 
@@ -273,17 +246,19 @@ De fonds zijn juist gegaan.
 
 </details>
 
+
+
+
 ## README 2024 FED
+
+
 
 ## Toegankelijkheidstest 1/2 (week 1)
 
-<details>
-  <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
-
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  Ik heb mijn toegankelijkheidstest van 2023 meegenomen. Zie hierboven.  
 
-</details>
+
 
 
 
@@ -313,7 +288,13 @@ De fonds zijn juist gegaan.
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik heb deze week wat minder gedaan dan verwacht voor deze les. Ik ben meer orde gaan scheppen voor dat ik verder kan.
+Ik heb zelf een planning vast gesteld waar ik mij de komende 2 weken echt op moet focussen:
+
+- Achtergrond kleuren werken met de vlakken
+- verdiepen in de klik drop down links daar zitten wel een aantal van in mijn side
+- de afbeelding sliders werkend maken
+
 
 
   ### Agenda voor meeting
@@ -329,10 +310,11 @@ De fonds zijn juist gegaan.
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - 
+  -
+  -
+  -
+
 
 </details>
 
