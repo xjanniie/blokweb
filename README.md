@@ -43,13 +43,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   De BMW 7 serie
 
   https://www.ekris.nl/bmw/modellen/7-serie
-  <img src="readme-images/de-bmw-7-serie.png" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/de-bmw-7-serie.png" width="375px" alt="omschrijving van de pagina 2023">
+
+  2024
+   <img src="readme-images/de-bmw-7-serie-nieuw.png" width="375px" alt="omschrijving van de pagina 2024">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Fastr-verhalen
 
   https://www.ekris.nl/bmw/fastr/verhalen
-  <img src="readme-images/fastr-verhalen.png" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/fastr-verhalen.png" width="375px" alt="omschrijving van de pagina 2023">
+
+  2023
+  <img src="readme-images/fastr-verhalen-nieuw.png" width="375px" alt="omschrijving van de pagina 2024">
  
 </details>
 
@@ -267,14 +273,8 @@ De fonds zijn juist gegaan.
 <details>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
-  ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
-
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+- De website is het afgelopen half jaar niet veranderd op een afbeelding na. De basis blijft hetzelfde.
+Zie info van 2023
 
 </details>
 
