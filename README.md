@@ -46,7 +46,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/de-bmw-7-serie.png" width="375px" alt="omschrijving van de pagina 2023">
 
   2024
-   <img src="readme-images/de-bmw-7-serie-nieuw.png" width="375px" alt="omschrijving van de pagina 2024">
+   <img src="readme-images/de-bmw-7-serie-nieuw.jpg" width="375px" alt="omschrijving van de pagina 2024">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Fastr-verhalen
@@ -54,8 +54,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.ekris.nl/bmw/fastr/verhalen
   <img src="readme-images/fastr-verhalen.png" width="375px" alt="omschrijving van de pagina 2023">
 
-  2023
-  <img src="readme-images/fastr-verhalen-nieuw.png" width="375px" alt="omschrijving van de pagina 2024">
+  2024
+  <img src="readme-images/fastr-verhalen-nieuw.jpg" width="375px" alt="omschrijving van de pagina 2024">
  
 </details>
 
