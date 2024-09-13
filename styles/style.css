@@ -1,16 +1,16 @@
 @font-face {
     font-family: "BMWTypeNext Pro Regular";
-    src: url("./fonts/type-next-tt-regar.wuloff") format('woff');
+    src: url(./fonts/type-next-tt-regar.wuloff) format('woff');
 }
 
 @font-face {
     font-family: "BMWTypeNext Pro Light";
-    src: url("./fonts/type-next-tt-light.woff") format('woff');
+    src: url(./fonts/type-next-tt-light.woff) format('woff');
 }
 
 @font-face {
     font-family: "BMWTypeNext Pro Bold";
-    src: url("./fonts/type-next-tt-bold.woff") format('woff');
+    src: url(./fonts/type-next-tt-bold.woff) format('woff');
 }
 
 
