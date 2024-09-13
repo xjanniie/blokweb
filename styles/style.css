@@ -132,8 +132,10 @@ header {
   }
   
   header > a img {
-    height:3em;
+    height:2em;
+    width: auto;
   }
+
   
   /*****************/
 /* BEIDE BUTTONS */
@@ -221,11 +223,6 @@ nav a {
   column-gap:.25em;
   
   border-bottom:solid 1px var(--menu-border);
-}
-
-nav a img {
-  width:auto;
-  height:2em;
 }
 
 nav a.active {
@@ -325,9 +322,17 @@ section:nth-of-type(7){
   background-color: pink;
 }
 
+
+
+/*algemeen*/ 
 img{
   width: 50%;
   height: auto;
+}
+
+section img:first-of-type{
+  height:40em;
+  width: auto;
 }
 
 
