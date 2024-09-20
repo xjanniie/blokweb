@@ -299,20 +299,14 @@ Ik heb zelf een planning vast gesteld waar ik mij de komende 2 weken echt op moe
 
   ### Agenda voor meeting
   samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  Geen agenda opgesteld. 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - 
-  -
-  -
+  - Ik heb nog veel werk te doen naast de minor
+  - tips gekregen voor de carocells. daar heb ik best veel van op mijn website
+  - mijn lettertype is in de war. hij laad het bmw lettertype niet goed zien in de git hub. hij werkt wel in mijn eigen browser. de vet gedrukte lettertype werkt wel via de git. kwamen er niet helemaal uit met de studentassistentes. ze gaven wel tips waar ik mee verder kan om het uit te zoeken. 
   -
 
 
@@ -334,12 +328,10 @@ Ik heb zelf een planning vast gesteld waar ik mij de komende 2 weken echt op moe
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+- ik loop heel erg vast met de styling van mijn pagina's de margins en het feit dat alles blijft schalen en flexen
+- ik moet meer tijd erin stoppen om uit te zoeken hoe dat werkt. 
+- ik heb pop ups wat wordt er van mij verwacht
+- het lettetype werkt nog niet juist. 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
