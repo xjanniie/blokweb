@@ -18,7 +18,7 @@
 /* CSS REMEDY */
 /**************/
 * {
-	font-family: "BMWTypeNext Pro Regular", fantasy;
+	font-family: "BMWTypeNext Pro Regular", f;
 }
 
 
@@ -92,8 +92,7 @@ h4 {
 body{
 
     width: 100%;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-top: 30px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -292,9 +291,17 @@ nav a.active {
 /*basic styling opmaak pagina */
 
 
+section{
+  padding-top: 60px;
+  padding-bottom:  60px;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
 section:nth-of-type(3) {
   background:#272727;
   color: #fff;
+
 }
 
 p:first-child{
@@ -336,3 +343,451 @@ section img:first-of-type{
 }
 
 
+/********************/
+/* ALGEMENE STIJLEN */
+/********************/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+	--maxWidth:32rem;
+}
+
+body {
+	grid-template-columns: minmax(auto, var(--maxWidth));
+	justify-content:center;
+}
+
+
+/********/
+/* main */
+/********/
+h2 {
+	margin:clamp(2rem, 10vw, 3.2rem) 0 0;
+	font-size:1em;
+	line-height:1.25em;
+}
+
+h2 + a {
+  display:inline-block;
+}
+
+h2 + a::after {
+	content:" ✎";
+}
+
+
+
+
+
+/*****************************/
+/*****************************/
+/****                     ****/
+/****   DE CAROCAROUSEL   ****/
+/****                     ****/
+/*****************************/
+/*****************************/
+
+
+
+
+
+/********************************/
+/* CUSTOM PROPERTIES - CAROUSEL */
+/********************************/
+
+.caroCarousel {
+	/* basis waarden die door de hele carousel gebruikt worden */
+	/* kun je zelf aanpassen */
+  
+	--caroCarouselMainColor:#333;
+  --caroCarouselAccentColor:#1b75b3;
+  --caroCarouselInverseColor:#e48a4c;
+	--caroCarouselShadeColor:#ddd9;
+
+	--caroCarouselElementWidth:100%; /* kan ook kleiner om meer elementen tegelijk te laten zien */
+	--caroCarouselWhiteSpace:.5em;
+	--caroCarouselLinkButtonSize:3em;
+	--caroCarouselBolletjesSize:1.25em;
+	--caroCarouselPlayButtonSize:var(--caroCarouselBolletjesSize);
+
+	--caroCarouselAutoScrollInterval:4000; /* in miliseconden */
+}
+
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+  .caroCarousel {
+    --caroCarouselShadeColor:#37332f66;
+  }
+}
+
+
+
+
+
+/*****************************/
+/* DE CAROCAROUSEL CONTAINER */
+/*****************************/
+
+html {
+	scroll-behavior: smooth;
+}
+
+.caroCarousel {
+  position: relative;
+	margin-top:.75em;
+	overflow:hidden; /* om de linkbuttons te verbergen */
+}
+
+
+/************************************/
+/* de carousel elementen container */
+.caroCarousel > ul {
+  margin: 0; 
+	padding: 0;
+  list-style: none;
+	display: flex;
+
+	/* handmatig scrollen is niet mogelijk */
+	overflow: hidden;
+
+	/* snappen als er gescrolled wordt - andere helft bij li */
+  scroll-snap-type: inline mandatory;
+	/* smooth scrollen */
+	scroll-behavior: smooth;
+}
+
+/* handmatig scrollen is mogelijk - geen custom interaction */
+.caroCarousel:not(.customInteraction) > ul {
+	overflow-x: scroll;
+	overflow-y: hidden;
+	
+  /* scrollbar zoveel mogelijk verbergen */
+  -webkit-overflow-scrolling: touch; /* voor iOS*/
+  -ms-overflow-style: none; /* voor IE */
+	scrollbar-width: none; /* voor firefox */
+	
+	/* indien het einde of het begin van de pagina bereikt is met scrollen */
+	/* voorkomen dat de pagina gaat scrollen */
+	overscroll-behavior: contain auto;
+}
+
+.caroCarousel > ul::-webkit-scrollbar {
+  /* scrollbar zoveel mogelijk verbergen */
+  display: none; /* voor chrome, safari en edge*/
+}
+
+
+/**************************/
+/* de carousel elementen */
+.caroCarousel > ul > li {
+  flex-basis: var(--caroCarouselElementWidth);
+  flex-shrink: 0;
+	flex-grow:1;
+
+	/* snappen als er gescrolled wordt - andere helft bij ul */
+	scroll-snap-align:center;
+}
+
+
+
+
+
+
+
+
+/********************/
+/* LINKS EN BUTTONS */
+/********************/
+
+/**************************************/
+/* stijlen voor alle buttons en links */
+.caroCarousel > a,
+.caroCarousel > nav a,
+.caroCarousel > button {
+	display: block;
+	padding:0;
+
+	appearance: none; /* voor de button */
+	background-color: var(--caroCarouselShadeColor);
+	border: none; /* voor de button */
+	outline: none;
+	box-shadow: inset 0 0 0 1px currentColor;
+	
+	font:inherit; /* voor de button */
+  text-decoration: none; /* voor de links */
+	color: var(--caroCarouselMainColor);
+  
+	cursor: pointer; /* voor de button */
+	
+  transition: 0.5s;
+}
+
+.caroCarousel > a:hover,
+.caroCarousel > a:focus,
+.caroCarousel > nav a:hover,
+.caroCarousel > nav a:focus,
+.caroCarousel > button:hover,
+.caroCarousel > button:focus {
+  color: var(--caroCarouselAccentColor);
+}
+
+.caroCarousel.noScrollingNeeded > a,
+.caroCarousel.noScrollingNeeded > nav a,
+.caroCarousel.noScrollingNeeded > button {
+	display:none;
+}
+
+
+
+
+/****************************/
+/* prev en next linkbuttons */
+.caroCarousel > a {
+  --buttonHorPosStatus: -1;
+	--buttonHorPos: calc( 
+			(var(--caroCarouselLinkButtonSize) + var(--caroCarouselWhiteSpace) * 2) * var(--buttonHorPosStatus)
+			+ var(--caroCarouselWhiteSpace)
+		);
+
+  position: absolute;
+	top: calc(50% - var(--caroCarouselLinkButtonSize) / 2);
+
+  width: var(--caroCarouselLinkButtonSize); 
+	aspect-ratio: 1 / 1;
+  display: grid;
+	place-items: center;
+}
+
+/* initieel staan de links "buiten beeld" */
+.caroCarousel > a[href="previous"] {
+  left: var(--buttonHorPos);
+}
+.caroCarousel > a[href="next"] {
+  right: var(--buttonHorPos);
+}
+
+/* bij hover en focus schuiven de links in beeld */
+.caroCarousel:hover > a,
+.caroCarousel:focus-within > a {
+  --buttonHorPosStatus: 0;
+}
+
+/* prev en next linkbuttons pijltjes */
+.caroCarousel > a::before,
+.caroCarousel > a::after {
+  content: "";
+  position: absolute;
+  
+	width: calc(var(--caroCarouselLinkButtonSize) / 3);
+	height: calc(var(--caroCarouselLinkButtonSize) / 12);
+  
+	background-color: currentColor;
+}
+
+.caroCarousel > a[href=previous]::before {
+	transform-origin: calc(var(--caroCarouselLinkButtonSize) / 24) center;
+	transform: rotate(45deg);
+}
+.caroCarousel > a[href=previous]::after {
+	transform-origin: calc(var(--caroCarouselLinkButtonSize) / 24) center;
+	transform: rotate(-45deg);
+}
+
+.caroCarousel > a[href=next]::before {
+	transform-origin: calc(100% - var(--caroCarouselLinkButtonSize) / 24) center;
+	transform: rotate(45deg);
+}
+.caroCarousel > a[href=next]::after {
+	transform-origin: calc(100% - var(--caroCarouselLinkButtonSize) / 24) center;
+	transform: rotate(-45deg);
+}
+
+
+/****************/
+/* de bolletjes */
+
+/* de bolletjes container */
+.caroCarousel > nav ul {
+  position: absolute;
+	inset:
+	  auto
+		var(--caroCarouselWhiteSpace)
+		var(--caroCarouselWhiteSpace);
+	
+	margin: 0; 
+  padding:0;
+	
+	display: flex;
+  justify-content: center;	
+	gap:calc( var(--caroCarouselBolletjesSize) / 3);
+	
+	list-style: none;
+}
+
+.caroCarousel.autoScrollOn > nav ul {
+	/* ruimte voor de auto-play button */
+	inset: 
+	  auto 
+		calc( var(--caroCarouselBolletjesSize) + 2 * var(--caroCarouselWhiteSpace) ) 
+		var(--caroCarouselWhiteSpace);
+
+		height:var(--caroCarouselBolletjesSize);
+		align-items: center;
+}
+
+
+/* een bolletje container */
+.caroCarousel > nav li {
+	flex-basis: var(--caroCarouselBolletjesSize);
+	aspect-ratio: 1 / 1;
+}
+
+
+/* de bolletjes */
+.caroCarousel > nav a {
+	display:block;
+	position: relative;
+  width:100%;
+	height:100%;
+	border-radius:50%;
+}
+
+.caroCarousel > nav a.current {
+  background-color: currentColor;
+}
+
+
+/*********************/
+/* play/pause button */
+
+.caroCarousel > button {
+  position: absolute;
+  right: var(--caroCarouselWhiteSpace);
+	bottom: var(--caroCarouselWhiteSpace);
+	
+	width: var(--caroCarouselPlayButtonSize);
+	aspect-ratio: 1 / 1;
+
+	display: grid;
+	place-items: center;
+}
+
+/* play/pause button */
+.caroCarousel > button::before,
+.caroCarousel > button::after {
+  content: "";
+  position: absolute;
+  
+	width: calc(var(--caroCarouselPlayButtonSize) / 2);
+	height: calc(var(--caroCarouselPlayButtonSize) / 12);
+  
+	background-color: currentColor;
+  transform-origin: calc(100% - var(--caroCarouselPlayButtonSize) / 24) center;
+  transition:transform 0.5s;
+}
+
+/* indien niet aan het auto-scrollen */
+/* de streepjes vormen een play-icoon */
+.caroCarousel > button::before {
+	transform: rotate(45deg);
+}
+.caroCarousel > button::after {
+	transform: rotate(-45deg);
+}
+
+/* indien aan het auto-scrollen */
+/* de streepjes vormen een pauze-icoon */
+.caroCarousel.autoScrolling > button::before {
+	transform: translateY( calc(var(--caroCarouselPlayButtonSize) / -10) );
+}
+.caroCarousel.autoScrolling > button::after {
+	transform: translateY( calc(var(--caroCarouselPlayButtonSize) / 10) );
+}
+
+/* in de button draait een 'eierwekker' */
+.caroCarousel.autoScrolling > button {	
+	animation-name: carouselAutoScrollingButton;
+  animation-duration: calc(var(--caroCarouselAutoScrollInterval) * 1ms);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes carouselAutoScrollingButton {
+	0%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 0%, transparent 0%); }
+	2%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 2%, transparent 0%); }
+	4%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 4%, transparent 0%); }
+	6%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 6%, transparent 0%); }
+	8%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 8%, transparent 0%); }
+	
+	10%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 10%, transparent 0%); }
+	12%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 12%, transparent 0%); }
+	14%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 14%, transparent 0%); }
+	16%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 16%, transparent 0%); }
+	18%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 18%, transparent 0%); }
+
+	20%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 20%, transparent 0%); }
+	22%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 22%, transparent 0%); }
+	24%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 24%, transparent 0%); }
+	26%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 26%, transparent 0%); }
+	28%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 28%, transparent 0%); }
+
+	30%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 30%, transparent 0%); }
+	32%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 32%, transparent 0%); }
+	34%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 34%, transparent 0%); }
+	36%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 36%, transparent 0%); }
+	38%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 38%, transparent 0%); }
+
+	40%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 40%, transparent 0%); }
+	42%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 42%, transparent 0%); }
+	44%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 44%, transparent 0%); }
+	46%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 46%, transparent 0%); }
+	48%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 48%, transparent 0%); }
+
+	50%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 50%, transparent 0%); }
+	52%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 52%, transparent 0%); }
+	54%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 54%, transparent 0%); }
+	56%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 56%, transparent 0%); }
+	58%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 58%, transparent 0%); }
+
+	60%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 60%, transparent 0%); }
+	62%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 62%, transparent 0%); }
+	64%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 64%, transparent 0%); }
+	66%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 66%, transparent 0%); }
+	68%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 68%, transparent 0%); }
+
+	70%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 70%, transparent 0%); }
+	72%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 72%, transparent 0%); }
+	74%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 74%, transparent 0%); }
+	76%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 76%, transparent 0%); }
+	78%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 78%, transparent 0%); }
+
+	80%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 80%, transparent 0%); }
+	82%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 82%, transparent 0%); }
+	84%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 84%, transparent 0%); }
+	86%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 86%, transparent 0%); }
+	88%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 88%, transparent 0%); }
+
+	90%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 90%, transparent 0%); }
+	92%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 92%, transparent 0%); }
+	94%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 94%, transparent 0%); }
+	96%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 96%, transparent 0%); }
+	98%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 98%, transparent 0%); }
+	
+	100%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 100%, transparent 0%); }
+}
+
+
+
+
+/***********************/
+/* DE CAROUSEL CONTENT */
+/***********************/
+
+/* de stijlen voor jouw content hier */
+.caroCarousel > ul > li img {
+  display: block;
+  width: 100%;
+}
