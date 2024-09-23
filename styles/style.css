@@ -1,16 +1,16 @@
 @font-face {
     font-family: "BMWTypeNext Pro Regular";
-    src: url(./fonts/type-next-tt-regular.woff) format('woff');
+    src: url(../fonts/type-next-tt-regular.woff) format('woff');
 }
 
 @font-face {
     font-family: "BMWTypeNext Pro Light";
-    src: url(./fonts/type-next-tt-light.woff) format('woff');
+    src: url(../fonts/type-next-tt-light.woff) format('woff');
 }
 
 @font-face {
     font-family: "BMWTypeNext Pro Bold";
-    src: url(./fonts/type-next-tt-bold.woff) format('woff');
+    src: url(../fonts/type-next-tt-bold.woff) format('woff');
 }
 
 
@@ -55,8 +55,17 @@ h1, h2, h3, h4 {
 }
 
 
+
+
+
 h1 {
 	font-size: 2.5em;
+  color: #ffffff;
+  position:absolute; 
+  left: 43%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  margin: -50px 0 0 -50px;
 }
 
 h2, h3 {
@@ -272,21 +281,48 @@ nav a.active {
   }
 }
 
-
-
 .btn-blauw {
   color: #fff;
   background-color: #1b69d4;
   border-color: #1b69d4;
+}
+
+.btn-wit{
+  color: #000000;
+  background-color: #fff;
+  border-color: #fff;
+}
+.btn-blauw:nth-of-type(1){
   font-weight: 700;
   text-align: center;
   vertical-align: middle;
   border: 0 solid transparent;
-  padding: 0.725rem 1.25rem;
+  padding: 0.725rem 10rem;
   font-size: 1rem;
   line-height: 1.8;
-
+  position: absolute; 
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: -50px 0 0 -50px;
 }
+
+.btn-wit:nth-of-type(2){
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  border: 0 solid transparent;
+  padding: 0.725rem 10rem;
+  font-size: 1rem;
+  line-height: 1.8;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  margin: -50px 0 0 -50px;
+}
+
+
 
 /*basic styling opmaak pagina */
 
@@ -331,11 +367,6 @@ section:nth-of-type(7){
 
 
 
-/*algemeen*/ 
-img{
-  width: 50%;
-  height: auto;
-}
 
 section img:first-of-type{
   height:40em;
@@ -790,4 +821,6 @@ html {
 .caroCarousel > ul > li img {
   display: block;
   width: 100%;
+  height: auto;
 }
+
