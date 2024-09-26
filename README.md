@@ -336,10 +336,8 @@ Ik heb zelf een planning vast gesteld waar ik mij de komende 2 weken echt op moe
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - meerdere richtlijnen gekregen voor mijn website met goede tips en handige links om voor een mooi en goed eind resultaat te komen. 
+  - er is nog veel werk te doen aankomende week en daarnaast moet ik de toegankelijkheids test niet vergeten. 
 
 </details>
 
