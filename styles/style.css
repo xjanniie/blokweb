@@ -96,8 +96,6 @@ h4 {
   --title-gradient:linear-gradient(rgb(0, 0, 0) 40%, rgb(255, 255, 255) 80%);
 }
 
-
-
 body{
     width: 100%;
     height: 100%;
@@ -166,22 +164,30 @@ header {
 
 /*hoofd afbeelding*/
 
-  div{
+  div .blur{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     max-height: 100%;
     margin: 0;
     padding: 0;
     filter: blur(3.5px);
-    
+    z-index: 0;
   }
   
   .blur{
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width:100%;
     object-fit: fill;
+    z-index: 0;
   }
 
-  picture{
-    position: relative;
+  picture img{
+    max-width: 60%;
   }
 
 
@@ -193,7 +199,7 @@ header {
   /*****************/
 /* BEIDE BUTTONS */
 /*****************/
-header button {
+header nav button {
   padding:.5em;
   
   /* icon en tekst met gap-je naast elkaar */
@@ -211,7 +217,7 @@ header button {
   color:var(--button-color);
 }
 
-header button img {
+header nav button img {
   height:1em;
 }
 
@@ -219,7 +225,7 @@ header button img {
 /***************/
 /* MENU BUTTON */
 /***************/
-header > button {
+header nav > button {
   /* JOUW CODE HIER - stap 3 */
   order:-1;
 }
@@ -227,7 +233,7 @@ header > button {
 /************/
 /* HET MENU */
 /************/
-nav {
+header nav {
   padding:1em;
   
   display:grid;
@@ -251,7 +257,7 @@ nav {
 }
 
 /* als menu open is */
-nav.toonMenu {
+header nav.toonMenu {
   /* JOUW CODE HIER - stap 4 */
   translate:0% 0%;
 }
@@ -259,7 +265,7 @@ nav.toonMenu {
 /*******************/
 /* LIJST MET LINKS */
 /*******************/
-nav ul { 
+header nav ul { 
   margin:0; 
   padding:0em;
   list-style:none;
@@ -269,7 +275,7 @@ nav ul {
 /************************/
 /* EEN LINK IN DE LIJST */
 /************************/
-nav a {
+header nav a {
   /* icon en tekst met gap-je naast elkaar */
   display:flex;
   align-items:center;
@@ -278,7 +284,7 @@ nav a {
   border-bottom:solid 1px var(--menu-border);
 }
 
-nav a.active {
+header nav a.active {
   font-weight:bold;
 }
 
@@ -293,7 +299,7 @@ nav a.active {
   }
   
 
-  nav {
+  header nav {
     /* JOUW CODE HIER - stap 7 */
     position:static;
     translate:unset;
@@ -302,18 +308,18 @@ nav a.active {
     background:none;
   }
   
-  nav button {
+  header nav button {
     /* JOUW CODE HIER - stap 6 */
     display:none;
   }
   
-  nav ul {
+  header nav ul {
     /* JOUW CODE HIER - stap 8 */
     display:flex;
     gap:1em;
   }
   
-  nav a {
+  header nav a {
     /* JOUW CODE HIER - stap 9 */
     flex-direction:column;
     
@@ -337,6 +343,9 @@ nav a.active {
   background-color: #fff;
   border-color: #fff;
 }
+
+/* https://medium.com/front-end-weekly/absolute-centering-in-css-ea3a9d0ad72e */
+
 .btn-blauw:nth-of-type(1){
   font-weight: 700;
   text-align: center;

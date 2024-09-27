@@ -365,26 +365,14 @@ Ik heb zelf een planning vast gesteld waar ik mij de komende 2 weken echt op moe
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  Ik moet nog meer doen dan ik besefte eigenlijk ik moet de komende dagen nog vol aan de code werken. 
+  
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - de carrocels werken nog niet op alle verschillende standen 
+  - tips gekregen om de afbeeldingen te positioneren
 
 </details>
 
@@ -425,8 +413,15 @@ Ik heb zelf een planning vast gesteld waar ik mij de komende 2 weken echt op moe
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+1. https://developer.mozilla.org/en-US/docs/Web/CSS/:last-of-type
+
+2. https://stackoverflow.com/questions/44172360/github-pages-font-face-not-working
+
+3. Carrousels code https://codepen.io/shooft/pen/yLKjzWa
+
+4. Afbeelding blur https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/blur
+
+5. Afbeelding laten vervangen https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
+
 
 </details>
