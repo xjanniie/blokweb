@@ -104,35 +104,22 @@ body{
     margin-left: auto;
 }
 
-img {
-  width: 100%;
+img{
+  width: 40%;
   height: auto;
 }
 
-/* verras knop */ 
 
-button {
-  background-color: red;
-  font-weight: 700;
-  text-align: center;
-  vertical-align: middle;
-  border: 0 solid transparent;
-  padding: 0.725rem 10rem;
-  font-size: 1rem;
-  line-height: 1.8;
-  position: absolute; 
-  left: 50%;
-  top: 450%;
-  transform: translate(-50%, -50%);
-  margin: -50px 0 0 -50px;
 
-}
+/* verras knop benoemd vanuit article omdat hij verdwenen was */ 
+
+
 header {
     min-height:4em;
-    padding:0 1em;
+    padding:0;
     background-image:var(--header-gradient);
     line-height:1;
-    
+    height: 100%;
     /* JOUW CODE HIER - stap 3 */
     display:flex;
     justify-content:space-between;
@@ -162,34 +149,32 @@ header {
   }
 
 
+  header img {
+    width: 30px;
+  }
+
 /*hoofd afbeelding*/
 
-  div .blur{
+
+/* z index https://developer.mozilla.org/en-US/docs/Web/CSS/z-index */ 
+
+  .blur {
+    filter: blur(10px);
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-height: 100%;
-    margin: 0;
-    padding: 0;
-    filter: blur(3.5px);
-    z-index: 0;
+    width:100%;
+    height: 80%;
+    z-index: -1;
   }
-  
-  .blur{
+
+  picture img{
+    max-width: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width:100%;
-    object-fit: fill;
-    z-index: 0;
+    
   }
-
-  picture img{
-    max-width: 60%;
-  }
-
 
 
   /* alle afbeeldingen */
@@ -221,6 +206,41 @@ header nav button img {
   height:1em;
 }
 
+/* pop up geprobeerd */
+
+
+.tooltip {
+  position:relative; /* making the .tooltip span a container for the tooltip text */
+  border-bottom:1px dashed #000; /* little indicater to indicate it's hoverable */
+}
+
+
+.tooltip:before {
+  content: attr(data-text); /* here's the magic */
+  position:absolute;
+  
+  /* vertically center */
+  top:50%;
+  transform:translateY(-50%);
+  
+  /* move to right */
+  left:100%;
+  margin-left:15px; /* and add a small left margin */
+  
+  /* basic styles */
+  width:200px;
+  padding:10px;
+  border-radius:10px;
+  background:#000;
+  color: #fff;
+  text-align:center;
+  display:none; /* hide by default */
+}
+
+.tooltip:hover:before {
+  display:block;
+}
+
 
 /***************/
 /* MENU BUTTON */
@@ -235,7 +255,6 @@ header nav > button {
 /************/
 header nav {
   padding:1em;
-  
   display:grid;
   align-content:start;
   gap:1em;
@@ -280,7 +299,6 @@ header nav a {
   display:flex;
   align-items:center;
   column-gap:.25em;
-  
   border-bottom:solid 1px var(--menu-border);
 }
 
@@ -292,8 +310,8 @@ header nav a.active {
 /****************************************************************/
 /* styling voor de header als de browser minimaal 38em breed is */
 /****************************************************************/
-@media (min-width:52em) {
-  header > button {
+@media (min-width:53em) {
+  header > nav button {
     /* JOUW CODE HIER - stap 6 */
     display:none;
   }
@@ -359,6 +377,7 @@ header nav a.active {
   top: 50%;
   transform: translate(-50%, -50%);
   margin: -50px 0 0 -50px;
+  z-index: 0;
 }
 
 .btn-wit:nth-of-type(2){
@@ -388,11 +407,25 @@ section{
   padding-right: 7%;
 }
 
+section:nth-of-type(2) {
+  margin-top: 40%;
+  background:#ffffff;
+
+}
+
+
 section:nth-of-type(3) {
   background:#272727;
   color: #fff;
 
 }
+
+img section:nth-of-type(3) {
+ height: 50%;
+ width: 50%;
+}
+
+
 
 p:first-child{
   color: #757575;
@@ -411,17 +444,38 @@ section:nth-of-type(5){
 
 section:nth-of-type(7){
   background: #ebe9e7;
+
 }
 
 
-/*code pagina 2*/
-.fastr{
-  background-color: pink;
+section:nth-of-type(7):after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
+article:nth-of-type(7){
+float: left;
+width: 20%;
+padding: 20px;
+}
 
+/* Create four equal columns that floats next to each other */
 
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  article:nth-of-type(7){
+    width: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  article:nth-of-type(7){
+    width: 100%;
+  }
+}
 
 
 
@@ -497,15 +551,6 @@ h2 + a::after {
 
 	--caroCarouselAutoScrollInterval:4000; /* in miliseconden */
 }
-
-/* dark mode */
-@media (prefers-color-scheme: dark) {
-  .caroCarousel {
-    --caroCarouselShadeColor:#37332f66;
-  }
-}
-
-
 
 
 
@@ -588,7 +633,7 @@ html {
 /* stijlen voor alle buttons en links */
 .caroCarousel > a,
 .caroCarousel > nav a,
-.caroCarousel > button {
+.caroCarousel > section button {
 	display: block;
 	padding:0;
 
@@ -611,37 +656,11 @@ html {
 .caroCarousel > a:focus,
 .caroCarousel > nav a:hover,
 .caroCarousel > nav a:focus,
-.caroCarousel > button:hover,
-.caroCarousel > button:focus {
+.caroCarousel > section button:hover,
+.caroCarousel > section button:focus {
   color: var(--caroCarouselAccentColor);
 }
 
-.caroCarousel.noScrollingNeeded > a,
-.caroCarousel.noScrollingNeeded > nav a,
-.caroCarousel.noScrollingNeeded > button {
-	display:none;
-}
-
-
-
-
-/****************************/
-/* prev en next linkbuttons */
-.caroCarousel > a {
-  --buttonHorPosStatus: -1;
-	--buttonHorPos: calc( 
-			(var(--caroCarouselLinkButtonSize) + var(--caroCarouselWhiteSpace) * 2) * var(--buttonHorPosStatus)
-			+ var(--caroCarouselWhiteSpace)
-		);
-
-  position: absolute;
-	top: calc(50% - var(--caroCarouselLinkButtonSize) / 2);
-
-  width: var(--caroCarouselLinkButtonSize); 
-	aspect-ratio: 1 / 1;
-  display: grid;
-	place-items: center;
-}
 
 /* initieel staan de links "buiten beeld" */
 .caroCarousel > a[href="previous"] {
@@ -709,17 +728,6 @@ html {
 	list-style: none;
 }
 
-.caroCarousel.autoScrollOn > nav ul {
-	/* ruimte voor de auto-play button */
-	inset: 
-	  auto 
-		calc( var(--caroCarouselBolletjesSize) + 2 * var(--caroCarouselWhiteSpace) ) 
-		var(--caroCarouselWhiteSpace);
-
-		height:var(--caroCarouselBolletjesSize);
-		align-items: center;
-}
-
 
 /* een bolletje container */
 .caroCarousel > nav li {
@@ -740,128 +748,6 @@ html {
 .caroCarousel > nav a.current {
   background-color: currentColor;
 }
-
-
-/*********************/
-/* play/pause button */
-
-.caroCarousel > button {
-  position: absolute;
-  right: var(--caroCarouselWhiteSpace);
-	bottom: var(--caroCarouselWhiteSpace);
-	
-	width: var(--caroCarouselPlayButtonSize);
-	aspect-ratio: 1 / 1;
-
-	display: grid;
-	place-items: center;
-}
-
-/* play/pause button */
-.caroCarousel > button::before,
-.caroCarousel > button::after {
-  content: "";
-  position: absolute;
-  
-	width: calc(var(--caroCarouselPlayButtonSize) / 2);
-	height: calc(var(--caroCarouselPlayButtonSize) / 12);
-  
-	background-color: currentColor;
-  transform-origin: calc(100% - var(--caroCarouselPlayButtonSize) / 24) center;
-  transition:transform 0.5s;
-}
-
-/* indien niet aan het auto-scrollen */
-/* de streepjes vormen een play-icoon */
-.caroCarousel > button::before {
-	transform: rotate(45deg);
-}
-.caroCarousel > button::after {
-	transform: rotate(-45deg);
-}
-
-/* indien aan het auto-scrollen */
-/* de streepjes vormen een pauze-icoon */
-.caroCarousel.autoScrolling > button::before {
-	transform: translateY( calc(var(--caroCarouselPlayButtonSize) / -10) );
-}
-.caroCarousel.autoScrolling > button::after {
-	transform: translateY( calc(var(--caroCarouselPlayButtonSize) / 10) );
-}
-
-/* in de button draait een 'eierwekker' */
-.caroCarousel.autoScrolling > button {	
-	animation-name: carouselAutoScrollingButton;
-  animation-duration: calc(var(--caroCarouselAutoScrollInterval) * 1ms);
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-@keyframes carouselAutoScrollingButton {
-	0%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 0%, transparent 0%); }
-	2%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 2%, transparent 0%); }
-	4%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 4%, transparent 0%); }
-	6%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 6%, transparent 0%); }
-	8%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 8%, transparent 0%); }
-	
-	10%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 10%, transparent 0%); }
-	12%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 12%, transparent 0%); }
-	14%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 14%, transparent 0%); }
-	16%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 16%, transparent 0%); }
-	18%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 18%, transparent 0%); }
-
-	20%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 20%, transparent 0%); }
-	22%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 22%, transparent 0%); }
-	24%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 24%, transparent 0%); }
-	26%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 26%, transparent 0%); }
-	28%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 28%, transparent 0%); }
-
-	30%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 30%, transparent 0%); }
-	32%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 32%, transparent 0%); }
-	34%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 34%, transparent 0%); }
-	36%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 36%, transparent 0%); }
-	38%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 38%, transparent 0%); }
-
-	40%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 40%, transparent 0%); }
-	42%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 42%, transparent 0%); }
-	44%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 44%, transparent 0%); }
-	46%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 46%, transparent 0%); }
-	48%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 48%, transparent 0%); }
-
-	50%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 50%, transparent 0%); }
-	52%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 52%, transparent 0%); }
-	54%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 54%, transparent 0%); }
-	56%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 56%, transparent 0%); }
-	58%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 58%, transparent 0%); }
-
-	60%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 60%, transparent 0%); }
-	62%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 62%, transparent 0%); }
-	64%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 64%, transparent 0%); }
-	66%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 66%, transparent 0%); }
-	68%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 68%, transparent 0%); }
-
-	70%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 70%, transparent 0%); }
-	72%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 72%, transparent 0%); }
-	74%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 74%, transparent 0%); }
-	76%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 76%, transparent 0%); }
-	78%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 78%, transparent 0%); }
-
-	80%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 80%, transparent 0%); }
-	82%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 82%, transparent 0%); }
-	84%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 84%, transparent 0%); }
-	86%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 86%, transparent 0%); }
-	88%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 88%, transparent 0%); }
-
-	90%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 90%, transparent 0%); }
-	92%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 92%, transparent 0%); }
-	94%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 94%, transparent 0%); }
-	96%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 96%, transparent 0%); }
-	98%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 98%, transparent 0%); }
-	
-	100%{ background-image: conic-gradient(var(--caroCarouselInverseColor) 100%, transparent 0%); }
-}
-
-
 
 
 /***********************/
@@ -909,7 +795,39 @@ footer {
   }
 }
 
-div:nth-of-type(1){
-  background-color: red;
-  filter: blur(0);
+
+
+
+
+/* footer via grid */ 
+
+.box {
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
 }
+
+.footer {
+  margin-top: 10%;
+		display: grid;
+    grid-gap: 10px;
+		grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+	}
+
+
+
+
+
+
+  
+
+/*code pagina 2*/
+.fastr{
+  background-color: pink;
+}
+
+
+
+
+
