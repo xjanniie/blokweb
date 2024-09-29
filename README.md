@@ -353,6 +353,22 @@ Ik heb zelf een planning vast gesteld waar ik mij de komende 2 weken echt op moe
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+
+  
+  Foto's van WCAG checklist:
+
+  <img src="readme-images/wcag-checklist-1.jpg" width="375px" alt="WCAG pagina 1">
+
+  <img src="readme-images/wcag-checklist-2.jpg" width="375px" alt="WCAG pagina 2">
+    
+  <img src="readme-images/wcag-checklist-3.jpg" width="375px" alt="WCAG pagina 3">
+    
+  <img src="readme-images/wcag-checklist-4.jpg" width="375px" alt="WCAG pagina 4">
+    
+  <img src="readme-images/wcag-checklist-5.jpg" width="375px" alt="WCAG pagina 5">
+  
+
+
 </details>
 
 
@@ -365,7 +381,8 @@ Ik heb zelf een planning vast gesteld waar ik mij de komende 2 weken echt op moe
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  Ik moet nog meer doen dan ik besefte eigenlijk ik moet de komende dagen nog vol aan de code werken. 
+  Ik moet nog meer doen dan ik besefte eigenlijk ik moet de komende dagen nog vol aan de code werken het valt mij tegen hoeveel
+  tijd ik nog heb naast de Minor wat in groepsopdracht gaat. 
   
 
   ### Verslag van meeting
@@ -386,19 +403,27 @@ Ik heb zelf een planning vast gesteld waar ik mij de komende 2 weken echt op moe
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/eind_resultaat_1.png" width="375px" alt="uitomst pagina">
 
+
+  <img src="readme-images/eind_resultaat_2.png" width="375px" alt="uitomst pagina">
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/rode_tekst_3.png" width="375px" alt="benoem altijd de dingen die je niet kan vinden in je code waar het fout gaat">
 
+  <img src="readme-images/rode_tekst.png" width="375px" alt="benoem altijd de dingen die je niet kan vinden in je code waar het fout gaat">
+
+  <img src="readme-images/rode_tekst_1.png" width="375px" alt="benoem altijd de dingen die je niet kan vinden in je code waar het fout gaat">
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/grid_2e_keer.png" width="375px" alt="grid">
+
+  <p>deel van de algehele styling en overzicht maken</p>
+
 </details>
 
 
@@ -422,6 +447,18 @@ Ik heb zelf een planning vast gesteld waar ik mij de komende 2 weken echt op moe
 4. Afbeelding blur https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/blur
 
 5. Afbeelding laten vervangen https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
+
+6. z index afbeeldingen voor https://developer.mozilla.org/en-US/docs/Web/CSS/z-index
+
+7. tooltip pop up https://blog.logrocket.com/creating-beautiful-tooltips-with-only-css/
+
+8. gridd https://codepen.io/rachelandrew/pen/dpYzZq?editors=1100
+
+9. https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_ex2
+
+10. https://chatgpt.com/share/66f8bc06-4bd0-8012-ae29-b51d49013bc0 chat gpt gevraagd om mijn java script in te korten. na kopieeren van 
+alles van het voorbeeld kwam ik na vergelijken er niet meer uit wat wel en niet nodig was. elke keer werkte de code daardoor niet. 
+hierom het in laten korten. 
 
 
 </details>

@@ -16,10 +16,10 @@
 
 	<header>
 		<!--geen omschrijving ivm niet interessant voor screenreader-->
-		<button aria-hidden="true"><img src="images/hamburger-icon.png" alt="" />Menu</button>
+		<button aria-hidden="true"><img src="images/hamburger-icon.png" alt="icoon hamburger" /></button>
 	  
 	<nav>
-		<button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-cross.svg" alt="" />Sluit</button>
+		<button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-cross.svg" alt="open menu" />Sluit</button>
 	
 		<ul>
 			<li><a class="active" href="#" title="Vind uw BMW">Vind uw BMW</a></li>
@@ -42,13 +42,13 @@
 	
 	<!--rechterzijde nav bar-->
 	
-	<a href="#"><img aria-hidden="true" src="images/search-icon.png"/></a>
+	<a href="#"><img aria-hidden="true" src="images/search-icon.png" alt="icoon zoeken"/></a>
 	
-	<a href="#"><img aria-hidden="true" src="images/profile-icon.png"/></a>
+	<a href="#"><img aria-hidden="true" src="images/profile-icon.png" alt="icoon profiel"/></a>
 	
-	<a href="#"><img aria-hidden="true" src="images/meer-icon.png"/>Meer</a>
+	<a href="#"><img aria-hidden="true" src="images/meer-icon.png" alt="icoon meer"/>Meer</a>
 	
-	<a href="#"><img aria-hidden="true" src="images/logo-ekris-bmw.svg"/></a>
+	<a href="#"><img aria-hidden="true" src="images/logo-ekris-bmw.svg" alt="icoon ekris bmw"/></a>
 	
 	
 	</header>
@@ -61,8 +61,10 @@
 		<img src="images/bmw-7-serie-grijs-voorkant-huis-ekris-header-desktop.jpg" alt="Chris standing up holding his daughter Elva" />
 	</picture>
 
+	<img class='blur' src="images/bmw-7-serie-grijs-voorkant-huis-oprit-ekris.jpg" alt="7 serie voorkant huis" />
+
+
 	<!--blur op achtergrond geprobeerd-->
-		<img class='blur' src="images/bmw-7-serie-grijs-voorkant-huis-oprit-ekris.jpg" alt="7 serie voorkant huis" />
 </div>
 
 <section>
@@ -74,7 +76,7 @@
 		<a class="btn-blauw" href="#" title="Link naar de proefrit ">Proefrit aanvragen</a>
 
 		<a class="btn-wit" href="#" title="Link naar offerte">Offerte aanvragen</a>
-	<article>
+	</article>
 </section>
 
 
@@ -84,11 +86,21 @@
 	<h2>Over de BMW 7 serie (G70).</h2>
 	<p>In de BMW 7 Serie (G70) geniet u van ieder moment op de weg. Kenmerken voor de BMW 7 Serie zijn maximaal comfort, uitmuntende prestaties en een zelfbewuste uitstraling. De BMW 7 Serie is het vlaggenschip van BMW en dat bewijst hij met zijn exterieur en interieur. De BMW 7 Serie baant volledig nieuwe wegen naar puur rijplezier, ongeëvenaard comfort voor lange reizen en een digitale belevingswereld van topklasse.</p>
 	<p>Bekijk hier de prijzen van de BMW 7 Serie:</p>
+</article>
+
+
+
+<!--https://blog.logrocket.com/creating-beautiful-tooltips-with-only-css/-->
 <article>
+	<span 
+	data-text="Thanks for hovering! I'm a tooltip" 
+	class="tooltip"
+  >Hover over me!</span>
 
-	
+</article>
 
-	<article>
+
+
 	
 <section id="bolletjesAndSwipen" class="caroCarousel" aria-label="Voorbeeld met bolletjes en swipen">
 
@@ -101,12 +113,11 @@
 	</ul>
 
 </section>
+
+
 	<p>Een strak lijnenspel</p>
 	<h3>Exterieur.</h3>
 	<p>Wat direct opvalt aan de BMW 7 Serie is de markante voorzijde die het zelfverzekerde karakter benadrukt. De vernieuwde BMW Iconic Glow nierengrille is standaard en zorgt voor een herkenbaar aangezicht in combinatie met de dubbele ronde koplampen. Het zijaanzicht van de BMW 7 Serie straalt een en al elegantie uit. Ook de achterkant van de BMW 7 Serie is vernieuwd. De slanke LED achterlichten scheppen een beeld van minimalistische elegantie en zijn ver doorgetrokken in de flanken. Daarnaast is dit de grootste BMW 7 Serie tot nu toe met een lengte van 5.391 mm, een breedte van 1.950 mm en hoogte van 1.544 mm. </p>
-	<article>
-
-	
 	<article>
 		<h3>Welke kleur wordt jouw BMW 7 serie?</h3>
 		<button id="random_kleur">Verras me!</button>
@@ -157,7 +168,7 @@
 		kosteloos halen en brengen.</p>
 
 		<a class="btn-wit-zwart" href="#" title="Link naar ons verhaal">Lees ons verhaal.</a>
-	<article>
+	</article>
 </section>
 
 <section>
@@ -168,7 +179,7 @@
 	<section id="bolletjesAndSwipen" class="caroCarousel" aria-label="Voorbeeld met bolletjes en swipen">
 
 		<ul>
-			<li><h4>Pure exellence.</h4></p><img src="images/bmw-7-serie-excellence-uitvoering.jpg" alt="7 serie voorkant huis" /></li>
+			<li><h4>Pure exellence.</h4><img src="images/bmw-7-serie-excellence-uitvoering.jpg" alt="7 serie voorkant huis" /></li>
 			<li><h4>M sport.</h4><img src="images/bmw-7-serie-grijs-voorkant-oprit-ekris.jpg" alt="7 serie voorkant huis" /></li>
 			<li><h4>M Sport Pro.</h4><img src="images/bmw-7-serie-grijs-m-sport-pro.jpg" alt="7 serie voorkant huis" /></li>
 			<li><h4>Two tone</h4><img src="images/bmw-7-serie-grijs-achterlicht-close-up-ekris.jpg" alt="7 serie voorkant huis" /></li>
@@ -178,7 +189,7 @@
 
 	<h3>Motorisering.</h3>
 	<p>De BMW 7 Serie is leverbaar met een plug-in- hybride motor, dieselmotor of elektrische motor als <a class="text-btn" href="#" title="Algeme voorwaarden">BMW i7</a>. Kiest u voor een hybride BMW 7 Serie, dan geniet u van maximaal 89 kilometer aan elektrisch rijplezier. Bekijk hier welke motorisering het beste bij uw wensen past.</p>
-<article>
+</article>
 
 
 
@@ -188,7 +199,7 @@
 	<h3>BMW 7 Serie G11/G12</h3>
 	<p>De zesde generatie BMW 7 Serie (G11) werd vanaf 2015 tot en met 2022 geproduceerd. Dit model bracht de beste rijdynamiek naar voren had een buitengewoon luxe uitstraling. Deze BMW 7 Serie kwam ook nog als lange, limousine variant. Bij de. facelift in 2019 krijgt de BMW 7 Serie een aanzienlijke boost in het design. Zo heeft deze facelift een grotere nierengrille welke samen met de aangepaste koplampen de breedte van deze luxe sedan extra benadrukt.</p>
 	<a class="btn-blauw" href="#" title="Link naar de voorraad">Bekijk voorraad</a>
-	<article>
+</article>
 </section>
 
 
@@ -201,39 +212,41 @@
 		
 		<a class="btn-blauw" href="#" title="Link de voorraad">Bekijk voorraad.</a>
 		<a class="btn-grijs" href="#" title="Link naar de offerte aanvragen">Offerte aanvragen.</a>
-	<article>
+	</article>
 </section>
 
 <!--gekozen voor één section met 4 articles ivm blokje op de bestaande site-->
+
 <section>
 	<article>
 	<h4>Private Lease.</h4>
 	<p>Voor een scherp all-in maandbedrag heeft u een gloednieuwe BMW voor de deur staan. Tarief is afhankelijk van de looptijd en kilometrage. 
 		Zelf kiest u de kleur, pakketten en opties.</p>
 	<a class="text-btn" href="#" title="Link om meer te lezen">Lees meer</a>
-	<article>
+</article>
 
 	<article>
 	<h4>Operational Lease.</h4>
 	<p>Voor een vast bedrag per maand least u zakelijk een gloednieuwe BMW. U kunt uw leaseovereenkomst uit breiden met een tankpas of winterbanden. 
 		Na afloop heeft u het recht van koop.</p>
 	<a class="text-btn" href="#" title="Link om meer te lezen">Lees meer</a>
-	<article>
+</article>
 
 	<article>	
 	<h4>Zakelijk financieren.</h4>
 	<p>Zakelijk een nieuwe BMW kopen maar liever geen grote eenmalige investering? U betaalt de BMW met een vast bedrag per maand tegen een vooraf 
 		vastgestelde looptijd en rente terug.</p>
 	<a class="text-btn" href="#" title="Link om meer te lezen">Lees meer</a>
-	<article>
+</article>
 		
 	<article>
 	<h4>Privé financieren.</h4>
 	<p>Particulier een nieuwe BMW kopen maar liever geen grote eenmalige investering? U betaalt de BMW met een vast bedrag per maand tegen een vooraf 
 		vastgestelde looptijd en rente terug.</p>
 	<a class="text-btn" href="#" title="Link om meer te lezen">Lees meer</a>
-<article>
+</article>
 </section>
+
 
 
 </main>
@@ -250,51 +263,76 @@
 
 
 		<div class="row">
-			<div class="column" style="background-color:#aaa;">
+			<div class="column">
 			  <img src="images/logo-ekris-bmw.svg" alt="Logo bmw footer" />
 			</div>
+
+
+
+			<div class="column">
+			  <h2>BMW</h2>
+<ul>
+	<li><a class="text-btn" href="#" title="Link om naar de nieuwe voorraad te gaan">Nieuwe voorraad</a></li>
+
+	<li><a class="text-btn" href="#" title="Link om naar de occasions te gaan">Occaions</a></li>
+
+	<li><a class="text-btn" href="#" title="Link om naar acties te gaan">Acties</a></li>
+	
+	<li><a class="text-btn" href="#" title="Link om naar de lease te gaan">Leasen</a></li>
+
+	<li><a class="text-btn" href="#" title="Link voor naar de werkplaats">Werkplaats</a></li>
+
+</ul>
+			 </div>
+
+			 <!--https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_ex2-->
 			
-			<div class="column" style="background-color:#bbb;">
-			  <h2>Column 2</h2>
-			  <p>Some text..</p>
-			</div>
+			<div class="column">
+				<h2>MINI</h2>
+				<ul>
+					<li><a class="text-btn" href="#" title="Link om naar de MINI nieuwe voorraad te gaan">Nieuwe voorraad</a></li>
+				
+					<li><a class="text-btn" href="#" title="Link om naar de MINI occasions te gaan">Occaions</a></li>
+				
+					<li><a class="text-btn" href="#" title="Link om naar MINI acties te gaan">Acties</a></li>
+					
+					<li><a class="text-btn" href="#" title="Link om naar de MINI lease te gaan">Leasen</a></li>
+				
+					<li><a class="text-btn" href="#" title="Link voor naar de MINI werkplaats">Werkplaats</a></li>
+				
+				</ul>
+			  </div>
+
+
+			  <!--https://codepen.io/rachelandrew/pen/dpYzZq?editors=1100-->
 			
-			<div class="column" style="background-color:#ccc;">
-			  <h2>Column 3</h2>
-			  <p>Some text..</p>
-			</div>
+			<div class="column">
+			  <h2>Ekris</h2>
+			  <ul>
+				<li><a class="text-btn" href="#" title="Link om contact op te nemen">Contact</a></li>
 			
-			<div class="column" style="background-color:#ddd;">
-			  <h2>Column 4</h2>
-			  <p>Some text..</p>
+				<li><a class="text-btn" href="#" title="Link naar vacactures bij ekris">Vacatures</a></li>
+			
+				<li><a class="text-btn" href="#" title="naar de webshop">Webshop</a></li>
+				
+				<li><a class="text-btn" href="#" title="Mijn ekris profiel">Mijn Ekris</a></li>
+			
+				<li><a class="text-btn" href="#" title="Duurzaamheid bij Ekris">Duurzaamheid</a></li>
+			
+			</ul>
 			</div>
 		  </div>
 		  
 
 
-		<a class="text-btn" href="#" title="Naar website Ekris MINI">Naar Ekris MINI</a>
 
-<!--list items gebruikt voor de a link om drop down menu te openen-->
-<ul>
-	<li><a class="text-btn" href="#" title="Link om menu BMW te openen">BMW</a></li>
-
-	<li><a class="text-btn" href="#" title="Link om menu meer MINI te openen">Mini</a></li>
-
-	<li><a class="text-btn" href="#" title="Link om menu ekris te openen">Ekris</a></li>
-</ul>
-
-
-<ul>
-	<li><a class="text-btn" href="#" title="Cookies">Cookies</a></li>
-
-	<li><a class="text-btn" href="#" title="Disclaimer">Disclaimer</a></li>
-
-	<li><a class="text-btn" href="#" title="Privacy Policy">Privacy Policy</a></li>
-
-	<li><a class="text-btn" href="#" title="Algeme voorwaarden">Algeme voorwaarden</a></li>
-</ul>
-
-<!--de knoppen van de linkjes zijn buttons ivm naar andere pagina's-->
+		<div class="footer">
+			<div class="box"><a href="#" title="Naar website Ekris MINI">Naar Ekris MINI</a></div>			
+			<div class="box"><a href="#" title="Cookies">Cookies</a></div>
+			<div class="box"><a href="#" title="Disclaimer">Disclaimer</a></div>
+			<div class="box"><a href="#" title="Privacy Policy">Privacy Policy</a></div>  
+			<div class="box"><a href="#" title="Algeme voorwaarden">Algeme voorwaarden</a></div>
+		</div>
 
 </footer>
 <script src="scripts/script.js"></script>
