@@ -357,15 +357,15 @@ Ik heb zelf een planning vast gesteld waar ik mij de komende 2 weken echt op moe
   
   Foto's van WCAG checklist:
 
-  <img src="readme-images/wcag-checklist-1.jpg" width="375px" alt="WCAG pagina 1">
+  <img src="readme-images/wcag-checklist-1_eind.jpg" width="375px" alt="WCAG pagina 1">
 
-  <img src="readme-images/wcag-checklist-2.jpg" width="375px" alt="WCAG pagina 2">
+  <img src="readme-images/wcag-checklist-2_eind.jpg" width="375px" alt="WCAG pagina 2">
     
-  <img src="readme-images/wcag-checklist-3.jpg" width="375px" alt="WCAG pagina 3">
+  <img src="readme-images/wcag-checklist-3_eind.jpg" width="375px" alt="WCAG pagina 3">
     
-  <img src="readme-images/wcag-checklist-4.jpg" width="375px" alt="WCAG pagina 4">
+  <img src="readme-images/wcag-checklist-4_eind.jpg" width="375px" alt="WCAG pagina 4">
     
-  <img src="readme-images/wcag-checklist-5.jpg" width="375px" alt="WCAG pagina 5">
+  <img src="readme-images/wcag-checklist-5_eind.jpg" width="375px" alt="WCAG pagina 5">
   
 
 
@@ -460,5 +460,6 @@ Ik heb zelf een planning vast gesteld waar ik mij de komende 2 weken echt op moe
 alles van het voorbeeld kwam ik na vergelijken er niet meer uit wat wel en niet nodig was. elke keer werkte de code daardoor niet. 
 hierom het in laten korten. 
 
+11. Tips van de studentassistenten en docent Danny 
 
 </details>
