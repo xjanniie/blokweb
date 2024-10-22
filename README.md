@@ -426,6 +426,7 @@ Ik heb zelf een planning vast gesteld waar ik mij de komende 2 weken echt op moe
 
 </details>
 
+## Aanpassingen na eindgesprek (herkansing)
 
 
 
