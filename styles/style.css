@@ -326,7 +326,7 @@ header nav a.active {
 /****************************************************************/
 /* styling voor de header als de browser minimaal 38em breed is */
 /****************************************************************/
-@media (min-width:53em) {
+@media (min-width:75em) {
   header > nav button {
     /* JOUW CODE HIER - stap 6 */
     display:none;
