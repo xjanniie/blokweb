@@ -107,9 +107,6 @@ h4 {
 }
 
 
-
-
-
 body{
     width: 100%;
     height: 100%;
@@ -118,9 +115,13 @@ body{
     margin-left: auto;
 }
 
-img{
-  width: 40%;
-  height: auto;
+
+/*nav iconen weg */ 
+
+img body{
+  max-width: 100%; 
+  height: auto; 
+  width: 400px
 }
 
 
@@ -192,6 +193,16 @@ header {
   }
 
 
+
+  
+.lease {
+  margin-top: 20%;
+		display: grid;
+    grid-gap: 15px;
+		grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+	}
+
+
   /* alle afbeeldingen */
 
  
@@ -223,10 +234,25 @@ header nav button img {
 
 /* pop up geprobeerd */
 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
 .tooltip {
   position:relative; /* making the .tooltip span a container for the tooltip text */
-  border-bottom:1px dashed #000; /* little indicater to indicate it's hoverable */
+  border-bottom:1px dashed #000000; /* little indicater to indicate it's hoverable */
 
 }
 
@@ -247,8 +273,8 @@ header nav button img {
   width:200px;
   padding:10px;
   border-radius:10px;
-  background:#000;
-  color: #fff;
+  background:#ffffff;
+  color: #000000;
   text-align:center;
   display:none; /* hide by default */
 }
@@ -392,7 +418,8 @@ header nav a.active {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  margin: -50px 0 0 -50px;
+  -ms-transform: translate(-50%, -50%);
+  cursor: pointer;
   z-index: -2;
 }
 
@@ -408,7 +435,8 @@ header nav a.active {
   left: 50%;
   top: 42%;
   transform: translate(-50%, -50%);
-  margin: -50px 0 0 -50px;
+  -ms-transform: translate(-50%, -50%);
+  cursor: pointer;
   z-index: -2;
 }
 
@@ -810,8 +838,95 @@ footer {
 	}
 
 
+/* dropdown info*/ 
+
+  .dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
 
 
+
+  /* https://www.youtube.com/watch?v=e2RQM4pE8uI */ 
+
+
+  .alles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+
+  .samen{
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .samen .alles {
+    position:relative;
+    max-width: 450px;
+    margin:10px;
+    padding: 15px;
+    display: flex;
+    background: #fff;
+  }
+  
+ .alles .samen .img1 {
+    max-width: 150px;
+  }
+  
+
+
+
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #717a72;
+  }
+  
+  #myInput {
+    box-sizing: border-box;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #myInput:focus {outline: 3px solid #ddd;}
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
 
 
   
