@@ -463,4 +463,19 @@ hierom het in laten korten.
 
 11. Tips van de studentassistenten en docent Danny 
 
+12. https://www.youtube.com/watch?v=e2RQM4pE8uI
+
+
+13. https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_filter
+
+14. https://www.w3schools.com/howto/howto_css_table_zebra.asp
+
+15. https://www.w3schools.com/howto/howto_css_table_full_width.asp
+
+16. https://www.w3schools.com/howto/howto_css_button_on_image.asp
+
+17. https://www.w3schools.com/howto/howto_css_image_responsive.asp
+
+18. https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp
+
 </details>
